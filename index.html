@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Dublin Guidebook</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/home_styles.css">
+    <script scr="js\homescript.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="icon">
+            <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+            <h1>Travel Dublin <br>Without Kids</h1>
+        </div>
+
+
+        <div class="header-links">
+            <a href="#">Learn More</a>
+            <a
+                href="https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMGg3aDYSCjIwMjMtMDEtMjVyDAgDEggvbS8wMmNmdBooagwIAxIIL20vMDJjZnQSCjIwMjMtMDItMDFyDAgDEggvbS8waDdoNnABggELCP___________wFAAUgBmAEB">Flights</a>
+            <a href="https://travel.gc.ca/destinations/ireland">Help</a>
+            <a href="https://www.citizensinformation.ie/en/covid19/living_with_covid19_plan.html">Covid-19</a>
+        </div>
+    </header>
+
+    <div id="navbar" class="nav-trim">
+        <div class="navbar-grid">
+
+            <div class="nav-list main-nav">
+                <div id="Nav1" class="dropbtn">
+                    <a href="#" class="dropdown">Sightseeing</a>
+                </div>
+                <div id="Nav2" class="dropbtn">
+                    <a href="#" class="dropdown">Tours and Guides</a>
+                </div>
+                <div id="Nav3" class="dropbtn">
+                    <a href="#" class="dropdown"> Travel Options</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Dropdown1" class="dropdown-content nav-trim">
+        <a href="#">Trinity College</a>
+        <a href="#about_me">General Post Office</a>
+        <a href="#projects"> Kailmainham Gaol</a>
+        <a href="#projects"> Dublin Castle</a>
+        <a href="#projects"> St. Patricks's Cathedral</a>
+    </div>
+
+    <div id="Dropdown2" class="dropdown-content nav-trim">
+        <a href="#">Jameson Whisky Distillery</a>
+        <a href="#about_me">Guinness Brewery</a>
+        <a href="#projects"> Literary Pub Crawl</a>
+        <a href="#projects"> Musical Pub Crawl</a>
+        <a href="#projects"> Other Famous Pubs</a>
+    </div>
+
+    <div id="Dropdown3" class="dropdown-content nav-trim">
+        <a href="#">Clontarf Castle Hotel</a>
+        <a href="#about_me">Victorian pub & Townhouse</a>
+        <a href="#projects"> Unique Airbnb's</a>
+        <a href="#projects"> Transportation</a>
+    </div>
+
+
+    <section class="landing content">
+        <P>
+            Feature something here
+        </P>
+    </section>
+
+    <a id="featured">
+        <section>
+            <h2>featured:</h2>
+            <p>slide show maybe</p>
+        </section>
+    </a>
+
+
+
+
+    <footer>
+        <p>Copyright:</p>
+        <p>Sources:</p>
+        <p>Last updated:</p>
+    </footer>
+
+
+    <script>
+        /* code by W3schools from: https://www.w3schools.com/jsref/event_onclick.asp  */
+        document.getElementById("Nav1").onclick = function () { Nav1Func() };
+        function Nav1Func() {
+            document.getElementById("Nav1").classList.add("highlight");
+            document.getElementById("Nav2").classList.remove("highlight");
+            document.getElementById("Nav3").classList.remove("highlight");
+            document.getElementById("Dropdown1").classList.toggle("show-sub-nav");
+            document.getElementById("Dropdown2").classList.remove("show-sub-nav");
+            document.getElementById("Dropdown3").classList.remove("show-sub-nav");
+        }
+
+        document.getElementById("Nav2").onclick = function () { Nav2Func() };
+        function Nav2Func() {
+            document.getElementById("Nav2").classList.add("highlight");
+            document.getElementById("Nav1").classList.remove("highlight");
+            document.getElementById("Nav3").classList.remove("highlight");
+            document.getElementById("Dropdown2").classList.toggle("show-sub-nav");
+            document.getElementById("Dropdown1").classList.remove("show-sub-nav");
+            document.getElementById("Dropdown3").classList.remove("show-sub-nav");
+        }
+
+        document.getElementById("Nav3").onclick = function () { Nav3Func() };
+        function Nav3Func() {
+            document.getElementById("Nav3").classList.add("highlight");
+            document.getElementById("Nav1").classList.remove("highlight");
+            document.getElementById("Nav2").classList.remove("highlight");
+            document.getElementById("Dropdown3").classList.toggle("show-sub-nav");
+            document.getElementById("Dropdown1").classList.remove("show-sub-nav");
+            document.getElementById("Dropdown2").classList.remove("show-sub-nav");
+        }
+    </script>
+
+</body>
+
+</html>
