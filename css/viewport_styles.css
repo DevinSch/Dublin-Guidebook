@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: rgb(209, 209, 209);
+    min-height: 100vh;
+    max-width: 1440px;
+    min-width: 412px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/************************************ Page sections ***************************/
+section {
+    min-height: 100vh;
+    padding: 30px;
+    margin-top: 65.6px;
+    font-size: 22px;
+}
+
+.landing {
+    min-height: 100vh;
+    padding: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+    padding: 20px;
+    padding-left: 100px;
+}
+
+
+
+/********************************** resize **********************************/
+@media screen and (max-width: 754px) {
+    body {
+        background-color: #9b7516;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #088583;
+    }
+
+}

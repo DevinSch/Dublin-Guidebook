@@ -7,8 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/home_styles.css">
-    <script scr="js\homescript.js"></script>
+    <link rel="stylesheet" href="css/viewport_styles.css">
+    <link rel="stylesheet" href="css/nav_styles.css">
+    <link rel="stylesheet" href="css/index_styles.css">
 </head>
 
 <body>
@@ -28,66 +29,66 @@
         </div>
     </header>
 
-    <div id="navbar" class="nav-trim">
-        <div class="navbar-grid">
+    <nav class="navbar-grid">
+        <ul id="navbar" class="main-nav">
+            <li id="Nav1">
+                <a href="#" class="dropdown">Heritage</a>
+            </li>
+            <li id="Nav2">
+                <a href="#" class="dropdown">Tours</a>
+            </li>
+            <li id="Nav3">
+                <a href="#" class="dropdown">Taphouses</a>
+            </li>
+            <li id="Nav4">
+                <a href="#" class="dropdown">Nature</a>
+            </li>
+            <li id="Nav5">
+                <a href="#" class="dropdown">Hotels & transit</a>
+            </li>
+        </ul>
 
-            <div class="nav-list main-nav">
-                <div id="Nav1" class="dropbtn">
-                    <a href="#" class="dropdown">Heritage</a>
-                </div>
-                <div id="Nav2" class="dropbtn">
-                    <a href="#" class="dropdown">Tours</a>
-                </div>
-                <div id="Nav3" class="dropbtn">
-                    <a href="#" class="dropdown">Pubs</a>
-                </div>
-                <div id="Nav4" class="dropbtn">
-                    <a href="#" class="dropdown">Nature</a>
-                </div>
-                <div id="Nav5" class="dropbtn">
-                    <a href="#" class="dropdown"> Hotels & transit</a>
-                </div>
-            </div>
+        <div class="sub-nav">
+            <!--------------- Sub nav drop down menu ---------------->
+            <li id="Dropdown1" class="dropdown-content">
+                <a href="Heritage.html">Trinity College</a>
+                <a href="Heritage.html#">General Post Office</a>
+                <a href="Heritage.html#"> Kailmainham Gaol</a>
+                <a href="Heritage.html#"> Dublin Castle</a>
+                <a href="Heritage.html#"> St. Patricks's Cathedral</a>
+            </li>
+
+            <li id="Dropdown2" class="dropdown-content">
+                <a href="#">Musical Pub Crawl</a>
+                <a href="Tours.html">Literary Pub Crawl</a>
+                <a href="Tours.html#">DoDublin Tour Buses</a>
+                <a href="Tours.html#">Lazy Bike Tours</a>
+                <a href="Tours.html#">Go! Running Tours</a>
+            </li>
+
+            <li id="Dropdown3" class="dropdown-content">
+                <a href="Taphouses.html">Jameson Whisky Distillery</a>
+                <a href="Taphouses.html#">Guinness Brewery</a>
+                <a href="Taphouses.html#">The Duke Pub</a>
+                <a href="Taphouses.html#">The Brazen Head</a>
+                <a href="Taphouses.html#">The Long Hall</a>
+            </li>
+
+            <li id="Dropdown4" class="dropdown-content">
+                <a href="Nature.html">Cliffs of Moher</a>
+                <a href="Nature.html#">Gaints Causeway</a>
+                <a href="Nature.html#">Ring of Kerry</a>
+                <a href="Nature.html#">The Dark Hedges</a>
+            </li>
+
+            <li id="Dropdown5" class="dropdown-content">
+                <a href="Hotels.html">Clontarf Castle Hotel</a>
+                <a href="Hotels.html#">Victorian pub & Townhouse</a>
+                <a href="Hotels.html#"> Unique Airbnb's</a>
+                <a href="Hotels.html#"> Transportation</a>
+            </li>
         </div>
-    </div>
-
-    <div id="Dropdown1" class="dropdown-content">
-        <a href="#">Trinity College</a>
-        <a href="#about_me">General Post Office</a>
-        <a href="#projects"> Kailmainham Gaol</a>
-        <a href="#projects"> Dublin Castle</a>
-        <a href="#projects"> St. Patricks's Cathedral</a>
-    </div>
-
-    <div id="Dropdown2" class="dropdown-content">
-        <a href="#">Musical Pub Crawl</a>
-        <a href="#about_me">Literary Pub Crawl</a>
-        <a href="#projects">DoDublin Tour Buses</a>
-        <a href="#projects">Lazy Bike Tours</a>
-        <a href="#projects">Go! Running Tours</a>
-    </div>
-
-    <div id="Dropdown3" class="dropdown-content">
-        <a href="#">Jameson Whisky Distillery</a>
-        <a href="#about_me">Guinness Brewery</a>
-        <a href="#projects">The Duke Pub</a>
-        <a href="#projects">The Brazen Head</a>
-        <a href="#projects">The Long Hall</a>
-        <a href="#projects">The Gravediggers</a>
-    </div>
-
-    <div id="Dropdown4" class="dropdown-content">
-        <a href="#">Cliffs of Moher</a>
-        <a href="#about_me">Gaints Causeway</a>
-        <a href="#projects">Ring of Kerry</a>
-    </div>
-
-    <div id="Dropdown5" class="dropdown-content">
-        <a href="#">Clontarf Castle Hotel</a>
-        <a href="#about_me">Victorian pub & Townhouse</a>
-        <a href="#projects"> Unique Airbnb's</a>
-        <a href="#projects"> Transportation</a>
-    </div>
+    </nav>
 
 
     <!-- Code by W3schools from: https://www.w3schools.com/w3css/w3css_slideshow.asp -->
@@ -118,7 +119,6 @@
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
-    <br>
 
     <footer>
         <p>Copyright:</p>
