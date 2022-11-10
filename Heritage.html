@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="css/viewport_styles.css">
     <link rel="stylesheet" href="css/nav_styles.css">
-    <link rel="stylesheet" href="css/index_styles.css">
+    <link rel="stylesheet" href="css/content_box_styles.css">
 </head>
 
 <body>
@@ -32,19 +32,22 @@
     <nav class="navbar-grid">
         <ul id="navbar" class="main-nav">
             <li id="Nav1">
-                <a href="#" class="dropdown active">Heritage</a>
+                <a href="#" class="dropdown">Heritage</a>
             </li>
             <li id="Nav2">
-                <a href="#" class="dropdown">Tours</a>
+                <a href="#" class="dropdown">Nature</a>
             </li>
             <li id="Nav3">
                 <a href="#" class="dropdown">Taphouses</a>
             </li>
             <li id="Nav4">
-                <a href="#" class="dropdown">Nature</a>
+                <a href="#" class="dropdown">Tours</a>
             </li>
             <li id="Nav5">
-                <a href="#" class="dropdown">Hotels & transit</a>
+                <a href="#" class="dropdown">Hotels</a>
+            </li>
+            <li id="Nav6">
+                <a href="#" class="dropdown">Transit</a>
             </li>
         </ul>
 
@@ -59,11 +62,10 @@
             </li>
 
             <li id="Dropdown2" class="dropdown-content">
-                <a href="#">Musical Pub Crawl</a>
-                <a href="Tours.html">Literary Pub Crawl</a>
-                <a href="Tours.html#">DoDublin Tour Buses</a>
-                <a href="Tours.html#">Lazy Bike Tours</a>
-                <a href="Tours.html#">Go! Running Tours</a>
+                <a href="Nature.html">Cliffs of Moher</a>
+                <a href="Nature.html#">Gaints Causeway</a>
+                <a href="Nature.html#">Ring of Kerry</a>
+                <a href="Nature.html#">The Dark Hedges</a>
             </li>
 
             <li id="Dropdown3" class="dropdown-content">
@@ -75,23 +77,74 @@
             </li>
 
             <li id="Dropdown4" class="dropdown-content">
-                <a href="Nature.html">Cliffs of Moher</a>
-                <a href="Nature.html#">Gaints Causeway</a>
-                <a href="Nature.html#">Ring of Kerry</a>
-                <a href="Nature.html#">The Dark Hedges</a>
+                <a href="#">Musical Pub Crawl</a>
+                <a href="Tours.html">Literary Pub Crawl</a>
+                <a href="Tours.html#">DoDublin Tour Buses</a>
+                <a href="Tours.html#">Lazy Bike Tours</a>
+                <a href="Tours.html#">Go! Running Tours</a>
             </li>
 
             <li id="Dropdown5" class="dropdown-content">
                 <a href="Hotels.html">Clontarf Castle Hotel</a>
                 <a href="Hotels.html#">Victorian pub & Townhouse</a>
                 <a href="Hotels.html#"> Unique Airbnb's</a>
-                <a href="Hotels.html#"> Transportation</a>
+            </li>
+
+            <li id="Dropdown6" class="dropdown-content">
+                <a href="Hotels.html">Trains</a>
+                <a href="Hotels.html#">Lucas Trams</a>
+                <a href="Hotels.html#">DublinBikes</a>
+                <a href="Hotels.html#">Car rentals</a>
             </li>
         </div>
     </nav>
 
-    <section>
-        Content here!
+    <section class="page-title">
+        <h1>Dublin Heritage and History</h1>
+    </section>
+
+    <section class="content-grid">
+        <div class="grid-child title">
+            <h3>Trinity College & The Book of Kells</h3>
+        </div>
+        <div class="grid-child image">
+            <h3>Image here</h3>
+        </div>
+        <div class="grid-child description">
+            <h3>description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eligendi possimus laborum nisi
+                explicabo impedit sapiente sed ullam sequi ut libero, modi consectetur adipisci. Veritatis debitis quasi
+                vel aliquid odit!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rem ut necessitatibus voluptate
+                blanditiis facere error placeat, assumenda eos numquam adipisci consectetur neque, obcaecati alias
+                molestiae voluptatum aut. Ipsa, ad.</p>
+        </div>
+        <div class="grid-child link">
+            Read more
+        </div>
+    </section>
+
+    <section class="content-grid right">
+        <div class="grid-child title">
+            <h3>Dublin General Post Office</h3>
+        </div>
+        <div class="grid-child image">
+            <h3>Image here</h3>
+        </div>
+        <div class="grid-child description">
+            <h3>description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eligendi possimus laborum nisi
+                explicabo impedit sapiente sed ullam sequi ut libero, modi consectetur adipisci. Veritatis debitis quasi
+                vel aliquid odit!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rem ut necessitatibus voluptate
+                blanditiis facere error placeat, assumenda eos numquam adipisci consectetur neque, obcaecati alias
+                molestiae voluptatum aut. Ipsa, ad.</p>
+        </div>
+        <div class="grid-child link">
+            Read more
+        </div>
     </section>
 
 
@@ -103,13 +156,13 @@
 
 
     <script>
+        const nav = ["Nav1", "Nav2", "Nav3", "Nav4", "Nav5", "Nav6"];
+        const drop = ["Dropdown1", "Dropdown2", "Dropdown3", "Dropdown4", "Dropdown5", "Dropdown6"];
 
-        const nav = ["Nav1", "Nav2", "Nav3", "Nav4", "Nav5"];
-        const drop = ["Dropdown1", "Dropdown2", "Dropdown3", "Dropdown4", "Dropdown5"];
-
-        function removeClasses(active) {
+        function sawpSubNav(active) {
             for (let i = 0; i < nav.length; i++) {
                 if (i == active) {
+                    /* code by W3schools from: https://www.w3schools.com/jsref/event_onclick.asp  */
                     document.getElementById(nav[i]).classList.toggle("highlight");
                     document.getElementById(drop[i]).classList.toggle("show-sub-nav");
                 } else {
@@ -119,31 +172,12 @@
             }
         }
 
-        /* code by W3schools from: https://www.w3schools.com/jsref/event_onclick.asp  */
-        document.getElementById("Nav1").onclick = function () { Nav1Func() };
-        function Nav1Func() {
-            removeClasses(0);
-        }
-
-        document.getElementById("Nav2").onclick = function () { Nav2Func() };
-        function Nav2Func() {
-            removeClasses(1);
-        }
-
-        document.getElementById("Nav3").onclick = function () { Nav3Func() };
-        function Nav3Func() {
-            removeClasses(2);
-        }
-
-        document.getElementById("Nav4").onclick = function () { Nav4Func() };
-        function Nav4Func() {
-            removeClasses(3);
-        }
-
-        document.getElementById("Nav5").onclick = function () { Nav5Func() };
-        function Nav5Func() {
-            removeClasses(4);
-        }
+        document.getElementById("Nav1").onclick = function () { sawpSubNav(0) };
+        document.getElementById("Nav2").onclick = function () { sawpSubNav(1) };
+        document.getElementById("Nav3").onclick = function () { sawpSubNav(2) };
+        document.getElementById("Nav4").onclick = function () { sawpSubNav(3) };
+        document.getElementById("Nav5").onclick = function () { sawpSubNav(4) };
+        document.getElementById("Nav6").onclick = function () { sawpSubNav(5) };
     </script>
 
 </body>

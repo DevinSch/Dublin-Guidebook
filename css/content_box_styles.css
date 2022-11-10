@@ -1,0 +1,65 @@
+.page-title {
+    padding: 30px;
+    font-size: 35px;
+    color: #333;
+    background-color: rgb(203, 143, 58);
+    text-align: center;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    min-height: 80vh;
+    padding: 30px;
+    font-size: 22px;
+}
+
+.grid-child.title {
+    text-align: center;
+    background-color: aqua;
+    grid-column: 1 / span 2;
+}
+
+.grid-child.image {
+    background-color: brown;
+    grid-row: 2 / span 2;
+}
+
+.grid-child.description {
+    background-color: green;
+}
+
+.grid-child.link {
+    background-color: gray;
+}
+
+.right {
+    margin-left: 20%;
+}
+
+/********************************** resize **********************************/
+@media screen and (max-width: 1080px) {}
+
+@media screen and (max-width: 900px) {
+    .content-grid {
+        max-width: 100%;
+    }
+
+    .right {
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    .grid-child.title {
+        grid-column: 1;
+    }
+    
+    .grid-child.image {
+        grid-row: 2;
+    }
+}

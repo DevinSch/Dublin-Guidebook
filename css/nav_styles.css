@@ -35,6 +35,7 @@ header img {
     column-gap: 75px;
     background-color: #333;
     margin: 0px;
+    padding-left: 0px;
 }
 
 #navbar li {
@@ -96,15 +97,30 @@ header img {
 }
 
 /********************************** resize **********************************/
-@media screen and (max-width: 754px) {
-    #navbar .main-nav a {
-        font-size: 26px;
-        padding: 2px;
+@media screen and (max-width: 1080px) {
+    #navbar {
+        column-gap: 50px;
     }
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+    #navbar {
+        column-gap: 30px;
+    }
+
+    #navbar a {
+        font-size: 20px;
+    }
+
+    .dropdown-content a {
+        font-size: 14px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
     header .icon {
         min-width: 280px;
     }
@@ -141,18 +157,27 @@ header img {
     }
 
     .navbar-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     .show-sub-nav {
         display: inline-grid;
+        justify-content: left;
     }
 
     .sub-nav a {
         font-size: 22px;
         padding: 10px;
+        text-align: left;
     }
 
+    .dropdown-content {
+        /* Webkit seems to work for chrome based browsers */
+        width: -webkit-fill-available; 
+        /* moz works with firebox */
+        width: -moz-available;
+    }
+    
     .dropdown-content a:hover {
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;

@@ -19,13 +19,6 @@ a {
 
 
 /************************************ Page sections ***************************/
-section {
-    min-height: 100vh;
-    padding: 30px;
-    margin-top: 65.6px;
-    font-size: 22px;
-}
-
 .landing {
     min-height: 100vh;
     padding: 30px;
@@ -49,7 +42,7 @@ footer {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     body {
         background-color: #088583;
     }
