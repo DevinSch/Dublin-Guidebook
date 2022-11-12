@@ -60,6 +60,7 @@ header img {
     text-decoration: underline;
     text-decoration-color: orange;
     text-decoration-thickness: 3px;
+    cursor: pointer;
 }
 
 #navbar .highlight {
@@ -104,6 +105,22 @@ header img {
     display: flex;
 }
 
+/********************* Sticky nav **************************/
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    max-width: -webkit-fill-available;
+    /* moz works with firebox */
+    max-width: -moz-available;
+    min-width: 1440px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.page-title {
+    padding-top: 50px;
+}
+
 /********************************** resize **********************************/
 @media screen and (max-width: 1080px) {
     #navbar {
@@ -133,13 +150,8 @@ header img {
         min-width: 280px;
     }
 
-    header img {
-        max-height: 75px;
-        margin: auto;
-    }
-
     header h2 {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     header .header-links {
@@ -173,10 +185,10 @@ header img {
         justify-content: left;
     }
 
-    .sub-nav a {
+    .dropdown-content a {
+        text-align: left;
         font-size: 22px;
         padding: 10px;
-        text-align: left;
     }
 
     .dropdown-content {
@@ -189,5 +201,12 @@ header img {
     .dropdown-content a:hover {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+    }
+
+    .sticky {
+        position: unset;
+        top: unset;
+        min-width: unset;
+        max-width: unset;
     }
 }

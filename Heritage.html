@@ -16,7 +16,7 @@
     <header>
         <div class="icon">
             <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
-            <h1>Travel Dublin <br>Without Kids</h1>
+            <h2>Travel Dublin <br>Without Kids</h2>
         </div>
 
         <div class="header-links">
@@ -28,10 +28,10 @@
         </div>
     </header>
 
-    <nav class="navbar-grid">
+    <nav id="full-nav" class="navbar-grid">
         <ul id="navbar" class="main-nav">
             <li id="Nav1">
-                <a href="#" class="dropdown active">Heritage</a>
+                <a class="dropdown active">Heritage</a>
             </li>
             <li id="Nav2">
                 <a href="#" class="dropdown">Nature</a>
@@ -53,11 +53,11 @@
         <ul id="sub-nav">
             <!-- Sub nav drop down menu -->
             <li id="Dropdown1" class="dropdown-content">
-                <a href="Heritage.html">Trinity College</a>
-                <a href="Heritage.html#">General Post Office</a>
-                <a href="Heritage.html#"> Kailmainham Gaol</a>
-                <a href="Heritage.html#"> Dublin Castle</a>
-                <a href="Heritage.html#"> St. Patricks's Cathedral</a>
+                <a href="Heritage.html#trinity">Trinity College</a>
+                <a href="Heritage.html#GPO">General Post Office</a>
+                <a href="Heritage.html#prision"> Kailmainham Gaol</a>
+                <a href="Heritage.html#castle"> Dublin Castle</a>
+                <a href="Heritage.html#cathedral"> St. Patricks's Cathedral</a>
             </li>
 
             <li id="Dropdown2" class="dropdown-content">
@@ -102,51 +102,148 @@
         <h1>Dublin Heritage and History</h1>
     </section>
 
-    <section class="content-grid">
-        <div class="grid-child title">
-            <h3>Trinity College & The Book of Kells</h3>
-        </div>
-        <div class="grid-child image">
-            <img src="images/Heritage/trinity_college_01.jpg" alt="Logo">
-        </div>
-        <div class="grid-child description">
-            <p>An immersive guided walking tour through the rich cultural heritage of Trinity College Dublin. Learn
-                about world famous alumni, discover ancient buildings, and get an insight in to the cutting-edge
-                innovations of Ireland’s leading University</p>
-            <p>Your ticket includes admission to the Book of Kells and Old Library, where your tour guide will leave
-                you after your campus walking tour is complete.</p>
-            <p>
-                Stepping in to the Old Library, is an awe-inspiring experience, which includes a close up look at 1,200
-                year old Book of Kells and access to the Long Room which is filled with 200,000 of Trinity’s most
-                ancient books.
-            </p>
-        </div>
-        <div class="grid-child link">
-            Read more
-        </div>
-    </section>
+    <!-- Trinity College Section -->
+    <a id="trinity">
+        <section class="content-grid">
+            <div class="grid-child title">
+                <h3>Trinity College & The Book of Kells</h3>
+            </div>
+            <div class="grid-child image">
+                <img src="images/Heritage/trinity_college_02.jpg" alt="Trinity">
+            </div>
+            <div class="grid-child description">
+                <p>An immersive guided walking tour through the rich cultural heritage of Trinity College Dublin. Learn
+                    about world famous alumni, discover ancient buildings, and get an insight in to the cutting-edge
+                    innovations of Ireland’s leading University</p>
+                <p>Your ticket includes admission to the Book of Kells and Old Library, where your tour guide will leave
+                    you after your campus walking tour is complete.</p>
+                <p>
+                    Stepping in to the Old Library, is an awe-inspiring experience, which includes a close up look at
+                    1,200
+                    year old Book of Kells and access to the Long Room which is filled with 200,000 of Trinity’s most
+                    ancient books.
+                </p>
+            </div>
+            <div class="grid-child link">
+                <div class="button" onclick="location.href='https://www.tcd.ie/visitors/book-of-kells/';">Read more on
+                    their site
+                </div>
+            </div>
+        </section>
+    </a>
 
-    <section class="content-grid right">
-        <div class="grid-child title">
-            <h3>Dublin General Post Office</h3>
-        </div>
-        <div class="grid-child image">
-            <h3>Image here</h3>
-        </div>
-        <div class="grid-child description">
-            <h3>description</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eligendi possimus laborum nisi
-                explicabo impedit sapiente sed ullam sequi ut libero, modi consectetur adipisci. Veritatis debitis quasi
-                vel aliquid odit!</p>
+    <!-- Dublin Post office section  -->
+    <a id="GPO">
+        <section class="content-grid right">
+            <div class="grid-child title">
+                <h3>Dublin General Post Office</h3>
+            </div>
+            <div class="grid-child image">
+                <img src="images/Heritage/dublin_gpo_01.jpg" alt="Dublin GPO">
+            </div>
+            <div class="grid-child description">
+                <p>Dublin's General Post Office is situated prominently in the middle of O'Connell Street. It is the
+                    headquarters for An Post, the Irish Postal Service, and the foundation stone was laid in 1814. It is
+                    well known as the stronghold of the 1916 Rising against British Rule.</p>
+                <p>
+                    The GPO was important as the main stronghold of the Irish Volunteers in the 1916 Rising. The Witness
+                    History Museum is an excellent way to learn about the Rising. You can still see round bullet holes
+                    in
+                    the large columns outside. Since the building was destroyed except for the front portico and facade,
+                    it
+                    was rebuilt and reopened in 1929. It retained elements of the original design while introducing some
+                    attractive art deco features. The GPO is often a place of remembrance, protests and pageantry.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rem ut necessitatibus voluptate
-                blanditiis facere error placeat, assumenda eos numquam adipisci consectetur neque, obcaecati alias
-                molestiae voluptatum aut. Ipsa, ad.</p>
-        </div>
-        <div class="grid-child link">
-            Read more
-        </div>
-    </section>
+            </div>
+            <div class="grid-child link">
+                <div class="button" onclick="location.href='https://www.visitdublin.com/gpo-museum';">Read more on their
+                    site
+                </div>
+            </div>
+        </section>
+    </a>
+
+    <!-- Kailmainham Goal  -->
+    <a id="prision">
+        <section class="content-grid">
+            <div class="grid-child title">
+                <h3>Kailmainham Gaol Prision</h3>
+            </div>
+            <div class="grid-child image">
+                <img src="images/Heritage/kilmainham_gaol_01.jpg" alt="Prision">
+            </div>
+            <div class="grid-child description">
+                <p>For over 100 years Kilmainham Gaol held thousands of men, women and children for crimes that ranged
+                    from minor offences to being involved in some of the most momentous events in Irish history. </p>
+                <p>
+                    Kilmainham Gaol opened in 1796 as the new County Gaol for Dublin. While most of the prisoners were
+                    common criminals, it also held political prisoners involved in Ireland’s struggle for independence.
+                    Included amongst those held here were Robert Emmet, Anne Devlin, the Fenians, Charles Stewart
+                    Parnell, Countess Markievicz and the leaders of the 1916 Easter Rising, 14 of whom were executed by
+                    firing squad in the Stonebreaker’s yard. The Gaol was closed in 1924 but was preserved as a national
+                    monument in the 1960s</p>
+            </div>
+            <div class="grid-child link">
+                <div class="button" onclick="location.href='https://kilmainhamgaolmuseum.ie/';">Read more on their site
+                </div>
+            </div>
+        </section>
+    </a>
+
+    <!--  Dublin Castle -->
+    <a id="castle">
+        <section class="content-grid right">
+            <div class="grid-child title">
+                <h3>Dublin Castle</h3>
+            </div>
+            <div class="grid-child image">
+                <img src="images/Heritage/dublin_castle_01.jpg" alt="Dublin Castle">
+            </div>
+            <div class="grid-child description">
+                <p> Just a short walk from Trinity College, on the way to Christchurch, Dublin Castle is well situated
+                    for visiting on foot. The history of this city-centre site stretches back to the Viking Age and the
+                    castle itself was built in the thirteenth century. The building served as a military fortress, a
+                    prison, a treasury and courts of law. For 700 years, from 1204 until independence, it was the seat
+                    of English (and then British) rule in Ireland. Rebuilt as the castle we now know in the seventeenth,
+                    eighteenth, nineteenth and twentieth centuries, Dublin Castle is now a government complex and an
+                    arena of state ceremony. The state apartments, undercroft, chapel royal, heritage centre and
+                    restaurant are now open to visitors.</p>
+
+            </div>
+            <div class="grid-child link">
+                <div class="button"
+                    onclick="location.href=' https://heritageireland.ie/places-to-visit/dublin-castle/';">Read more on
+                    their site
+                </div>
+            </div>
+        </section>
+    </a>
+
+    <!-- Kailmainham Goal  -->
+    <a id="cathedral">
+        <section class="content-grid">
+            <div class="grid-child title">
+                <h3>St. Patrick’s Cathedral</h3>
+            </div>
+            <div class="grid-child image">
+                <img src="images/Heritage/cathedral_01.jpg" alt="Prision">
+            </div>
+            <div class="grid-child description">
+                <p>Built between 1220 and 1260 in honour of Ireland’s patron saint, Saint Patrick’s Cathedral offers
+                    visitors a rich and compelling cultural experience and is one of the few buildings left from
+                    medieval Dublin. St Patrick baptised Christian converts on this site 1500 years ago. It is the
+                    National Cathedral of the Church of Ireland and the largest cathedral in the country. Jonathan
+                    Swift, author of Gulliver’s Travels, was dean of Saint Patrick’s Cathedral in the 1700s and he is
+                    one of many burials on site. The cathedral is world famous for its choir, established in 1432, which
+                    still performs daily during school term.</p>
+            </div>
+            <div class="grid-child link">
+                <div class="button" onclick="location.href='https://www.visitdublin.com/st-patrick-s-cathedral';">Read
+                    more on their site
+                </div>
+            </div>
+        </section>
+    </a>
 
 
     <footer>
@@ -179,6 +276,19 @@
         document.getElementById("Nav4").onclick = function () { sawpSubNav(3) };
         document.getElementById("Nav5").onclick = function () { sawpSubNav(4) };
         document.getElementById("Nav6").onclick = function () { sawpSubNav(5) };
+
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("full-nav");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
     </script>
 
 </body>
