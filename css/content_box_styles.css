@@ -1,9 +1,13 @@
 .page-title {
-    padding: 30px;
-    font-size: 35px;
-    color: #333;
+    padding: 1px;
     background-color: rgb(203, 143, 58);
     text-align: center;
+}
+
+.page-title h1 {
+    margin: 20px;
+    font-size: 38px;
+    color: #333;
 }
 
 .content-grid {
@@ -28,10 +32,14 @@
 
 .grid-child.description {
     background-color: green;
+    align-self: center;
 }
 
 .grid-child.link {
     background-color: gray;
+    align-self: baseline;
+    align-self: end;
+    text-align: center;
 }
 
 .right {
@@ -55,10 +63,11 @@
     .content-grid {
         grid-template-columns: 1fr;
     }
+
     .grid-child.title {
         grid-column: 1;
     }
-    
+
     .grid-child.image {
         grid-row: 2;
     }

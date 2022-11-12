@@ -6,6 +6,11 @@ header {
     align-items: center;
 }
 
+header h2 {
+    font-size: 30px;
+    color: #333;
+}
+
 header .icon {
     display: flex;
     min-width: 350px;
@@ -34,8 +39,6 @@ header img {
     justify-content: center;
     column-gap: 75px;
     background-color: #333;
-    margin: 0px;
-    padding-left: 0px;
 }
 
 #navbar li {
@@ -56,13 +59,23 @@ header img {
 #navbar .active {
     text-decoration: underline;
     text-decoration-color: orange;
-    cursor: pointer;
+    text-decoration-thickness: 3px;
 }
 
 #navbar .highlight {
     background-color: #169B62;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+}
+
+.navbar-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.navbar-grid ul {
+    margin: 0;
+    padding-left: 0;
 }
 
 /* code by W3schools from: https://www.w3schools.com/jsref/event_onclick.asp  */
@@ -74,7 +87,7 @@ header img {
     display: none;
     justify-content: space-around;
     background-color: #169B62;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content a {
@@ -89,11 +102,6 @@ header img {
 
 .show-sub-nav {
     display: flex;
-}
-
-.navbar-grid {
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 /********************************** resize **********************************/
@@ -130,7 +138,7 @@ header img {
         margin: auto;
     }
 
-    header h1 {
+    header h2 {
         font-size: 28px;
     }
 
@@ -144,7 +152,7 @@ header img {
         display: grid;
         justify-content: flex-start;
         row-gap: 5px;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     #navbar a {
@@ -152,7 +160,7 @@ header img {
     }
 
     #navbar .highlight {
-        border-top-left-radius: 0px;
+        border-top-left-radius: 0;
         border-bottom-right-radius: 20px;
     }
 
@@ -173,13 +181,13 @@ header img {
 
     .dropdown-content {
         /* Webkit seems to work for chrome based browsers */
-        width: -webkit-fill-available; 
+        width: -webkit-fill-available;
         /* moz works with firebox */
         width: -moz-available;
     }
-    
+
     .dropdown-content a:hover {
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
 }

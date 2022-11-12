@@ -16,7 +16,13 @@ a {
     color: black;
 }
 
+img {
+    max-width: 100%;
+}
 
+p {
+    padding: 0px 20px;
+}
 
 /************************************ Page sections ***************************/
 .landing {
@@ -31,8 +37,6 @@ footer {
     padding: 20px;
     padding-left: 100px;
 }
-
-
 
 /********************************** resize **********************************/
 @media screen and (max-width: 754px) {
