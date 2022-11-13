@@ -7,8 +7,14 @@ header {
 }
 
 header h2 {
-    font-size: 30px;
+    font-size: 32px;
     color: #333;
+}
+
+.cursive {
+    text-align: center;
+    margin: 0;
+    font-family: 'Caveat', cursive;
 }
 
 header .icon {
@@ -106,19 +112,22 @@ header img {
 }
 
 /********************* Sticky nav **************************/
+/* code by W3schools from: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
+    justify-items: auto;
     top: 0;
-    max-width: -webkit-fill-available;
+    /* Webkit seems to work for chrome based browsers */
+    width: -webkit-fill-available;
     /* moz works with firebox */
-    max-width: -moz-available;
-    min-width: 1440px;
+    width: -moz-available;
+    max-width: 1440px;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky+.page-title {
-    padding-top: 50px;
+    padding-top: 53px;
 }
 
 /********************************** resize **********************************/
@@ -151,7 +160,7 @@ header img {
     }
 
     header h2 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     header .header-links {

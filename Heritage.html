@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="css/viewport_styles.css">
     <link rel="stylesheet" href="css/nav_styles.css">
     <link rel="stylesheet" href="css/content_box_styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body onload="sawpSubNav(0)">
     <header>
         <div class="icon">
             <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
-            <h2>Travel Dublin <br>Without Kids</h2>
+            <h2>Travel Dublin<br>
+                <!-- code by Jeff Puckett from: https://stackoverflow.com/questions/6846448/two-lines-in-h1-tag -->
+            <span class="cursive"> Without Kids</span></h2>
         </div>
 
         <div class="header-links">
@@ -28,25 +35,26 @@
         </div>
     </header>
 
+
     <nav id="full-nav" class="navbar-grid">
         <ul id="navbar" class="main-nav">
             <li id="Nav1">
                 <a class="dropdown active">Heritage</a>
             </li>
             <li id="Nav2">
-                <a href="#" class="dropdown">Nature</a>
+                <a class="dropdown">Nature</a>
             </li>
             <li id="Nav3">
-                <a href="#" class="dropdown">Taphouses</a>
+                <a class="dropdown">Taphouses</a>
             </li>
             <li id="Nav4">
-                <a href="#" class="dropdown">Tours</a>
+                <a class="dropdown">Tours</a>
             </li>
             <li id="Nav5">
-                <a href="#" class="dropdown">Hotels</a>
+                <a class="dropdown">Hotels</a>
             </li>
             <li id="Nav6">
-                <a href="#" class="dropdown">Transit</a>
+                <a class="dropdown">Transit</a>
             </li>
         </ul>
 
@@ -277,12 +285,13 @@
         document.getElementById("Nav5").onclick = function () { sawpSubNav(4) };
         document.getElementById("Nav6").onclick = function () { sawpSubNav(5) };
 
-        window.onscroll = function () { myFunction() };
+        /* code by W3schools from: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+        window.onscroll = function () { stickyNavFunction() };
 
         var navbar = document.getElementById("full-nav");
         var sticky = navbar.offsetTop;
 
-        function myFunction() {
+        function stickyNavFunction() {
             if (window.pageYOffset >= sticky) {
                 navbar.classList.add("sticky")
             } else {

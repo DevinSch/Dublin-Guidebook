@@ -5,8 +5,9 @@
 }
 
 .page-title h1 {
+    font-family: 'Roboto', sans-serif;
     margin: 20px;
-    font-size: 38px;
+    font-size: 44px;
     color: #333;
 }
 
@@ -25,6 +26,7 @@
 }
 
 .grid-child.title h3 {
+    font-family: 'Roboto', sans-serif;
     font-size: 32px;
 }
 
