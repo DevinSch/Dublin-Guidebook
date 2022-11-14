@@ -74,7 +74,6 @@ h3 {
     grid-column: 1 / span 2;
 }
 
-
 .flip-child.image {
     grid-column: 2;
     grid-row: 2 / span 2;
@@ -94,12 +93,41 @@ h3 {
 }
 
 /************************* vertical content grid **********************************/
-.vert-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.full-vert-grid {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 75px;
     column-gap: 20px;
-    align-items: center;
-    margin:auto
+    margin: 30px;
+}
+
+.full-vert-grid a {
+    display: contents;
+}
+
+.vert-grid {
+    min-width: 350px;
+    /* code by Michael Benjamin from: https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row */
+    flex: 1 0 21%;
+    margin: auto;
+    padding: 75px 30px 0px 30px;
+    font-size: 22px;
+}
+
+.vert-child.title {
+    text-align: center;
+}
+
+.vert-child.description {
+    background-color: rgba(184, 184, 184, 0.527);
+    align-self: center;
+}
+
+.vert-child.link {
+    align-self: baseline;
+    align-self: end;
+    text-align: center;
+    padding-bottom: 18px;
 }
 
 /*************************Button settings **************************/
