@@ -48,8 +48,13 @@ h3 {
     padding-bottom: 18px;
 }
 
-.right {
+.content-grid.right {
     margin-left: 20%;
+}
+
+.content-grid.center {
+    margin: auto;
+    column-gap: 30px;
 }
 
 /************************* Flipped content grid **********************************/
@@ -88,11 +93,14 @@ h3 {
     padding-bottom: 18px;
 }
 
-.content-grid.center {
-    margin: auto;
-    column-gap: 30px;
+/************************* vertical content grid **********************************/
+.vert-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    align-items: center;
+    margin:auto
 }
-
 
 /*************************Button settings **************************/
 /*  code by W3Schools from: https://www.w3schools.com/howto/howto_css_animate_buttons.asp  */
@@ -118,7 +126,7 @@ h3 {
 }
 
 /******************************* resize ****************************/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
 
     .content-grid,
     .flip-grid {
