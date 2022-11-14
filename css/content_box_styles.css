@@ -16,80 +16,56 @@ h3 {
     color: #333;
 }
 
-
-/*****************************off set sections **********************/
-.content-grid {
+/*****************************grid parent classes **********************/
+.parent-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 80%;
-    min-height: 80vh;
     padding: 75px 30px 0px 30px;
+    column-gap: 30px;
     font-size: 22px;
 }
 
-.grid-child.title {
-    text-align: center;
+.parent-title {
     grid-column: 1 / span 2;
+    text-align: center;
 }
 
-.grid-child.image {
+.parent-image {
     grid-row: 2 / span 2;
+    max-height: 100%;
+    align-self: center;
 }
 
-.grid-child.description {
+.parent-description {
     background-color: rgba(184, 184, 184, 0.527);
     align-self: center;
 }
 
-.grid-child.link {
+.parent-link {
     align-self: baseline;
     align-self: end;
     text-align: center;
     padding-bottom: 18px;
 }
 
-.content-grid.right {
+/*****************************off set sections **********************/
+.parent-grid.right {
     margin-left: 20%;
 }
 
-.content-grid.center {
-    margin: auto;
-    column-gap: 30px;
-}
-
 /************************* Flipped content grid **********************************/
-.flip-grid {
-    display: grid;
-    column-gap: 30px;
-    grid-template-columns: 1fr 1fr;
-    max-width: 80%;
-    min-height: 80vh;
+.parent-grid.flip {
     margin: auto;
-    padding: 75px 30px 0px 30px;
-    font-size: 22px;
 }
 
-.flip-child.title {
-    text-align: center;
-    grid-column: 1 / span 2;
-}
-
-.flip-child.image {
+.parent-image.flip {
     grid-column: 2;
     grid-row: 2 / span 2;
 }
 
-.flip-child.description {
+.parent-description.flip {
     grid-column: 1;
-    background-color: rgba(184, 184, 184, 0.527);
-    align-self: center;
-}
-
-.flip-child.link {
-    align-self: baseline;
-    align-self: end;
-    text-align: center;
-    padding-bottom: 18px;
 }
 
 /************************* vertical content grid **********************************/
@@ -105,7 +81,9 @@ h3 {
     display: contents;
 }
 
-.vert-grid {
+.parent-grid.vert {
+    display: grid;
+    grid-template-columns: 1fr;
     min-width: 350px;
     /* code by Michael Benjamin from: https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row */
     flex: 1 0 21%;
@@ -114,20 +92,8 @@ h3 {
     font-size: 22px;
 }
 
-.vert-child.title {
-    text-align: center;
-}
-
-.vert-child.description {
-    background-color: rgba(184, 184, 184, 0.527);
-    align-self: center;
-}
-
-.vert-child.link {
-    align-self: baseline;
-    align-self: end;
-    text-align: center;
-    padding-bottom: 18px;
+.parent-title.vert {
+    grid-column: 1;
 }
 
 /*************************Button settings **************************/
@@ -156,34 +122,40 @@ h3 {
 /******************************* resize ****************************/
 @media screen and (max-width: 1100px) {
 
-    .content-grid,
+    .parent-grid,
     .flip-grid {
         max-width: 100%;
     }
 
-    .right {
+    .parent-grid.right {
         margin-left: 0%;
+    }
+
+    .full-vert-grid {
+        margin: 10px;
     }
 }
 
 @media screen and (max-width: 650px) {
 
-    .content-grid,
-    .flip-grid {
+    .parent-grid {
         grid-template-columns: 1fr;
     }
 
-    .grid-child.title,
-    .flip-child.title {
+    .parent-title {
         grid-column: 1;
     }
 
-    .grid-child.image {
+    .parent-image.offset {
         grid-row: 2;
     }
 
     .flip-child.image {
         grid-row: 2;
+        grid-column: 1;
+    }
+
+    .parent-image.flip {
         grid-column: 1;
     }
 }
