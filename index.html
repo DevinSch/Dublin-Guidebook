@@ -97,6 +97,12 @@
         </ul>
     </nav>
 
+    <div class="site-description">
+        <p>
+            Site description
+        </p>
+    </div>
+
     <!-- Code by W3schools from: https://www.w3schools.com/w3css/w3css_slideshow.asp -->
     <div class="slideshow-container">
         <div class="mySlides fade">
@@ -136,10 +142,14 @@
     <script>
         const nav = ["Nav1", "Nav2", "Nav3", "Nav4", "Nav5"];
         const drop = ["Dropdown1", "Dropdown2", "Dropdown3", "Dropdown4", "Dropdown5"];
+        const pages = ["Heritage.html", "Nature.html", "Taphouses.html", "Tours.html", "About.html"];
 
         function sawpSubNav(active) {
             for (let i = 0; i < nav.length; i++) {
                 if (i == active) {
+                    if (document.getElementById(nav[i]).classList.contains("highlight")) {
+                        window.location.href = pages[i];
+                    }
                     /* code by W3schools from: https://www.w3schools.com/jsref/event_onclick.asp  */
                     document.getElementById(nav[i]).classList.add("highlight");
                     document.getElementById(drop[i]).classList.add("show-sub-nav");

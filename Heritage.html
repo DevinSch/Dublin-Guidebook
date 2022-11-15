@@ -39,9 +39,6 @@
 
     <nav id="full-nav" class="navbar-grid">
         <ul id="navbar" class="main-nav">
-            <li id="Nav0">
-                <a class="dropdown" href="About.html"> &#60&#60 </a>
-            </li>
             <li id="Nav1">
                 <a class="dropdown active">Heritage</a>
             </li>
@@ -56,9 +53,6 @@
             </li>
             <li id="Nav5">
                 <a class="dropdown">About</a>
-            </li>
-            <li id="Nav6">
-                <a class="dropdown" href="Nature.html"> &#62&#62 </a>
             </li>
         </ul>
 
@@ -261,10 +255,14 @@
     <script>
         const nav = ["Nav1", "Nav2", "Nav3", "Nav4", "Nav5"];
         const drop = ["Dropdown1", "Dropdown2", "Dropdown3", "Dropdown4", "Dropdown5"];
+        const pages = ["Heritage.html", "Nature.html", "Taphouses.html", "Tours.html", "About.html"];
 
         function sawpSubNav(active) {
             for (let i = 0; i < nav.length; i++) {
                 if (i == active) {
+                    if (document.getElementById(nav[i]).classList.contains("highlight")) {
+                        window.location.href = pages[i];
+                    }
                     /* code by W3schools from: https://www.w3schools.com/jsref/event_onclick.asp  */
                     document.getElementById(nav[i]).classList.add("highlight");
                     document.getElementById(drop[i]).classList.add("show-sub-nav");

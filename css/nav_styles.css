@@ -144,18 +144,14 @@ header img {
         column-gap: 25px;
     }
 
-    #navbar a {
-        font-size: 22px;
-    }
-
     .dropdown-content a {
         font-size: 14px;
         text-align: center;
-    }
+    } 
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
     header .icon {
         min-width: 280px;
     }
