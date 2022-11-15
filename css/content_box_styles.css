@@ -9,7 +9,7 @@ h3 {
     text-align: center;
 }
 
-.page-title h1 {
+h1 {
     font-family: 'Roboto', sans-serif;
     margin: 20px;
     font-size: 44px;
@@ -21,7 +21,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 80%;
-    padding: 75px 30px 0px 30px;
+    padding: 75px 30px 0 30px;
     column-gap: 30px;
     font-size: 22px;
 }
@@ -78,13 +78,27 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     vertical-align: top;
-    margin: auto;
-    max-width: 400px;
-    padding: 75px 30px 0px 30px;
+    min-width: 300px;
+    max-width: 33%;
+    padding: 75px 20px 0px 20px;
 }
 
 .parent-title.vert {
     grid-column: 1;
+}
+
+/*******************newsletter  section ****************/
+.newsletter-signup {
+    padding: 30px;
+}
+
+.newsletter-button {
+    background-color: rgb(203, 143, 58);
+    padding: 10px 22px;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 /*****************************about section **********************/
@@ -103,7 +117,12 @@ h3 {
 }
 
 .parent-description.about a {
-    color: blue;
+    color: #169B62
+}
+
+.parent-description.about a:hover {
+    text-decoration: underline;
+    text-decoration-color:  rgb(203, 143, 58);
 }
 
 /*************************Button settings **************************/
@@ -113,13 +132,13 @@ h3 {
     font-size: 24px;
     text-align: center;
     cursor: pointer;
-    background-color: green;
+    background-color: #169B62;
     border-radius: 15px;
     box-shadow: 5px 9px #999;
 }
 
 .button:hover {
-    background-color: rgb(71, 192, 71);
+    background-color: #333;
     color: white;
 }
 
@@ -129,9 +148,21 @@ h3 {
     transform: translateY(4px);
 }
 
-/******************************* resize ****************************/
-@media screen and (max-width: 1100px) {
+.extra-padding {
+    padding-top: 60px;
+}
 
+/******************************* resize ****************************/
+@media screen and (max-width: 1200px) {
+    .parent-grid.vert {
+        justify-content: center;
+        min-width: none;
+        max-width: 47%;
+        margin-left: 10px;
+    }
+
+}
+@media screen and (max-width: 110px) {
     .parent-grid {
         max-width: 100%;
     }
@@ -146,6 +177,11 @@ h3 {
 }
 
 @media screen and (max-width: 800px) {
+    .parent-grid.vert {
+        justify-content: center;
+        max-width: 90%;
+        margin-left: 30px;
+    }
 
     .parent-grid {
         grid-template-columns: 1fr;
