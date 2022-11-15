@@ -33,7 +33,6 @@ h3 {
 
 .parent-image {
     grid-row: 2 / span 2;
-    max-height: 100%;
     align-self: center;
 }
 
@@ -57,7 +56,7 @@ h3 {
 }
 
 /************************* Flipped content grid **********************************/
-.parent-grid.flip {
+.parent-grid.center {
     margin: auto;
 }
 
@@ -98,6 +97,11 @@ h3 {
     grid-column: 1;
 }
 
+/*****************************off set sections **********************/
+.parent-grid.about {
+    grid-template-columns: 1fr;
+}
+
 /*************************Button settings **************************/
 /*  code by W3Schools from: https://www.w3schools.com/howto/howto_css_animate_buttons.asp  */
 .button {
@@ -124,8 +128,7 @@ h3 {
 /******************************* resize ****************************/
 @media screen and (max-width: 1100px) {
 
-    .parent-grid,
-    .flip-grid {
+    .parent-grid {
         max-width: 100%;
     }
 
@@ -138,7 +141,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
 
     .parent-grid {
         grid-template-columns: 1fr;
@@ -146,6 +149,10 @@ h3 {
 
     .parent-title {
         grid-column: 1;
+    }
+
+    .parent-image {
+        margin: auto;
     }
 
     .parent-image.offset {
