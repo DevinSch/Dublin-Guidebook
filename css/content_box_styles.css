@@ -39,7 +39,9 @@ h3 {
 
 .parent-description {
     background-color: rgba(184, 184, 184, 0.527);
+    border-radius: 15px;
     align-self: center;
+    font-style: italic;
 }
 
 .parent-link {

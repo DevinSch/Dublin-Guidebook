@@ -4,7 +4,8 @@
 
 html,
 body {
-    background: linear-gradient(to left, #abbaab, #d0d0d091);
+    background: linear-gradient(to right, #abbaab, #d0d0d091);
+    background-color: #088583;
     min-height: 100vh;
     max-width: 1440px;
     min-width: 400px;
@@ -37,19 +38,4 @@ footer {
     margin-top: 30px;
     padding: 20px;
     padding-left: 100px;
-}
-
-/********************************** resize **********************************/
-@media screen and (max-width: 754px) {
-    body {
-        background-color: #9b7516;
-    }
-
-}
-
-@media screen and (max-width: 650px) {
-    body {
-        background-color: #088583;
-    }
-
 }
