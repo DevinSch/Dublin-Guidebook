@@ -12,8 +12,8 @@ header h2 {
 }
 
 .cursive {
-    text-align: center;
-    margin: 0;
+    display: flex;
+    justify-content: center;
     font-family: 'Caveat', cursive;
 }
 
@@ -147,7 +147,7 @@ header img {
     .dropdown-content a {
         font-size: 14px;
         text-align: center;
-    } 
+    }
 
 }
 
