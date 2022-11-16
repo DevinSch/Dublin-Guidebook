@@ -40,6 +40,15 @@ footer {
     padding: 20px 20px 20px 100px;
 }
 
+footer a {
+    color: #169B62
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(203, 143, 58);
+}
+
 @media screen and (max-width: 720px) {
     footer {
         padding-left: 20px;

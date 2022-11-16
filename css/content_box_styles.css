@@ -17,6 +17,7 @@ h1 {
 }
 
 /*****************************grid parent classes **********************/
+/* As in a parent class rather, than parent grid item */
 .parent-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,17 +102,47 @@ h1 {
     margin-top: 10px;
 }
 
+.signup {
+    display: none;
+    position: fixed;
+    /* code by Maciej Krawczyk from: https://stackoverflow.com/questions/3157372/css-horizontal-centering-of-a-fixed-div */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(184, 184, 184, 1);
+    border-style: solid;
+    border-color: rgb(203, 143, 58);
+
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    min-width: 300px;
+    z-index: 9;
+}
+
+.signup p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.show {
+    display: block;
+}
+
 /*****************************about section **********************/
 .parent-grid.about {
     grid-template-columns: 1fr;
     overflow-wrap: anywhere;
 }
 
-.parent-description.about h3 {
+.parent-description.about {
+    margin-top: 10px;
     text-align: center;
 }
 
 .parent-description.about p {
+    text-align: left;
     padding-left: 20px;
     font-style: normal;
 }
@@ -122,7 +153,7 @@ h1 {
 
 .parent-description.about a:hover {
     text-decoration: underline;
-    text-decoration-color:  rgb(203, 143, 58);
+    text-decoration-color: rgb(203, 143, 58);
 }
 
 /*************************Button settings **************************/
@@ -162,7 +193,12 @@ h1 {
     }
 
 }
-@media screen and (max-width: 110px) {
+
+@media screen and (max-width: 1100px) {
+    .signup {
+        right: 35%;
+    }
+
     .parent-grid {
         max-width: 100%;
     }
@@ -177,6 +213,10 @@ h1 {
 }
 
 @media screen and (max-width: 800px) {
+    .signup {
+        right: 22%;
+    }
+
     .parent-grid.vert {
         justify-content: center;
         max-width: 90%;
