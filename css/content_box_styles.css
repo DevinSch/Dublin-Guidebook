@@ -1,19 +1,11 @@
 h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 32px;
+    font-size: 36px;
 }
 
-.page-title {
-    padding: 1px;
-    background-color: rgb(203, 143, 58);
-    text-align: center;
-}
-
-h1 {
+h4 {
     font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    font-size: 44px;
-    color: #333;
+    font-size: 32px;
 }
 
 /*****************************grid parent classes **********************/
@@ -38,6 +30,8 @@ h1 {
 }
 
 .parent-description {
+    /* Fall back */
+    background-color: grey;
     background-color: rgba(184, 184, 184, 0.527);
     border-radius: 15px;
     align-self: center;
@@ -81,7 +75,7 @@ h1 {
     vertical-align: top;
     min-width: 300px;
     max-width: 33%;
-    padding: 75px 20px 0px 20px;
+    padding: 75px 20px 0 20px;
 }
 
 .parent-title.vert {
@@ -110,6 +104,8 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%);
 
+    /* Fall back */
+    background-color: grey;
     background-color: rgba(184, 184, 184, 1);
     border-style: solid;
     border-color: rgb(203, 143, 58);
@@ -204,7 +200,7 @@ h1 {
     }
 
     .parent-grid.right {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .full-vert-grid {

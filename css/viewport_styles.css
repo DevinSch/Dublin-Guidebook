@@ -24,7 +24,20 @@ img {
 
 p {
     font-family: 'Open Sans', sans-serif;
-    padding: 0px 20px;
+    padding: 0 20px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    font-size: 44px;
+    color: #333;
+}
+
+.page-title {
+    padding: 1px;
+    background-color: rgb(203, 143, 58);
+    text-align: center;
 }
 
 /************************************ Page sections ***************************/

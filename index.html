@@ -17,7 +17,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body onload="sawpSubNav(0)">
     <header>
         <div class="icon">
             <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
@@ -38,7 +38,7 @@
 
 
     <nav id="full-nav" class="navbar-grid">
-        <ul id="navbar" class="main-nav">
+        <ul id="navbar">
             <li id="Nav1">
                 <a class="dropdown">Heritage</a>
             </li>
@@ -96,6 +96,10 @@
             </li>
         </ul>
     </nav>
+
+    <section class="page-title">
+        <h1>Welcome to Travel Dublin</h1>
+    </section>
 
     <div class="site-description">
         <p>
@@ -180,6 +184,20 @@
         document.getElementById("Nav3").onclick = function () { sawpSubNav(2) };
         document.getElementById("Nav4").onclick = function () { sawpSubNav(3) };
         document.getElementById("Nav5").onclick = function () { sawpSubNav(4) };
+
+        /* code by W3schools from: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+        window.onscroll = function () { stickyNavFunction() };
+
+        var navbar = document.getElementById("full-nav");
+        var sticky = navbar.offsetTop;
+
+        function stickyNavFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
 
         // Code by W3schools from: https://www.w3schools.com/w3css/w3css_slideshow.asp
         let slideIndex = 0;

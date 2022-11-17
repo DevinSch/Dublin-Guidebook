@@ -1,13 +1,18 @@
 .site-description {
+    /* Fall back */
+    background-color: grey;
     background-color: rgba(184, 184, 184, 0.527);
     padding: 15px;
     border-radius: 15px;
     max-width: 60%;
     margin: auto;
 }
+
 .site-description p {
-    font-size: 22px;;
+    font-size: 22px;
+    ;
 }
+
 /* Code by W3schools from: https://www.w3schools.com/w3css/w3css_slideshow.asp */
 /* Slideshow container */
 .slideshow-container {
@@ -69,6 +74,7 @@
 }
 
 @media screen and (max-width: 880px) {
+
     .site-description,
     .slideshow-container {
         max-width: 85%
